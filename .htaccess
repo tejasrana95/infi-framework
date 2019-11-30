@@ -1,18 +1,6 @@
 RewriteEngine On
 Options -Indexes 
 
-ErrorDocument 403 http://www.infitechnology.com/404/
-ErrorDocument 404 http://www.infitechnology.com/404/
-ErrorDocument 500 http://www.infitechnology.com/404/
-
-#RewriteCond %{HTTP_HOST} ^www\.infitechnology\.com$ [NC]
-#RewriteRule ^(.*)$ http://www.infitechnology.com/$1 [L,R=301]
-
-#RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
-
-#RewriteCond %{HTTP_HOST} !^www\.infitechnology\.com
-#RewriteRule (.*) http://www.infitechnology.com/$1 [R=301,L] 
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
